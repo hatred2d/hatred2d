@@ -1,0 +1,11 @@
+[package]
+name = "hatred2d"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.99"
+mlua = { version = "0.11.2", features = ["luau-jit", "anyhow", "serde", "macros", "async", "userdata-wrappers"] }
+mlua-luau-scheduler = "0.2.1"
+sdl2 = { version = "0.38.0", features = ["bundled"] }
+tokio = { version = "1.47.1", features = ["full"] }
